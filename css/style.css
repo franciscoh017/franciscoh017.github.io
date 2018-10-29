@@ -28,6 +28,10 @@ img{
     border-bottom: 1px solid #56a79a;
 }
 
+#main-header h1 a {
+    text-decoration: none;
+}
+
 /*navbar*/
 #navbar{
     text-transform: uppercase;
