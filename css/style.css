@@ -1,0 +1,9 @@
+.tabs .icon {
+    font-size: 30px;
+}
+
+.box {
+    opacity: 0.9;
+    background: #333;
+    border-radius: 5em;
+}
