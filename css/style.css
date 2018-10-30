@@ -2,8 +2,13 @@
     font-size: 30px;
 }
 
-.box {
+div.container.has-text-centered div.box {
     opacity: 0.9;
     background: #333;
     border-radius: 5em;
 }
+
+div.card.is-one-third {
+    margin: 0.25em;
+}
+
