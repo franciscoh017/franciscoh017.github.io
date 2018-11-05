@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://codepen.io/anon/pen/aWapBE.js"></script>
+    <title>Home | PTD</title>
+</head>
+
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <p class="is-uppercase is-size-4 has-text-weight-semibold">Redes</p>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="" class="navbar-link">
+                        <span class="icon is-large">
+                            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <span class="has-text-weight-semibold">Mayi | Administrador PTD</span>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            <span class="icon is-medium">
+                                <i class="fa fa-id-card fa-lg"></i>
+                            </span>
+                            <span class="is-size-5">
+                                Editar Perfil
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="#">
+                            <span class="icon is-medium">
+                                <i class="fa fa-lock fa-lg"></i>
+                            </span>
+                            <span class="is-size-5">
+                                Bloquear Sistema
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="#">
+                            <span class="icon is-medium">
+                                <i class="fa fa-sign-out-alt fa-lg"></i>
+                            </span>
+                            <span class="is-size-5">
+                                Cerrar Sesión
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="page" class="section">
+        <div class="columns">
+            <div class="column is-one-third-tablet is-one-fifth-desktop">
+                <div class="box">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            General
+                        </p>
+                        <ul class="menu-list">
+                            <li><a class="is-active">Dashboard</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Informes
+                        </p>
+                        <ul class="menu-list">
+                            <li>
+                                <a class="menu-label">Informes Partido</a>
+                                <ul>
+                                    <li><a>Miembros</a></li>
+                                    <li><a>Registros Por Día</a></li>
+                                    <li><a>Cantidad de Miembros</a></li>
+                                    <li><a>No Válido</a></li>
+                                    <li><a>Cantidad Municipal</a></li>
+                                    <li><a>Cantidad Provincial</a></li>
+                                    <li><a>Cantidad Sector</a></li>
+                                    <li><a>Seguidores</a></li>
+                                    <li><a>Resumen por Municipio</a></li>
+                                    <li><a>Resumen por Provincia</a></li>
+                                </ul>
+                                <a class="menu-label">Informes Padrón</a>
+                                <ul>
+                                    <li><a>Miembros del Partido</a></li>
+                                    <li><a>Voto Afectivo</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p class="menu-label">
+                            Administración
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Usuarios</a></li>
+                            <li><a>Roles de Seguridad</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div class="title">
+                        Dashboard
+                    </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-6">
+                            <div class="tile">
+                                <div class="tile is-parent">
+                                    <article class="tile is-child notification">
+                                        <p class="title">Cantidad por Edades y Sexo</p>
+                                        <div class="content">
+                                            <!-- Content -->
+                                            <canvas id="cantPorEdad"></canvas>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification">
+                                <div class="content">
+                                    <p class="title">Cantidad por Tipo Miembro</p>
+                                    <div class="content">
+                                        <!-- Content -->
+                                        <canvas id="cantPorTipo"></canvas>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-12">
+                            <div class="tile">
+                                <div class="tile is-parent">
+                                    <article class="tile is-child notification">
+                                        <p class="title">Cantidad por Edades y Sexo</p>
+                                        <div class="content">
+                                            <!-- Content -->
+                                            <canvas id="cantPorProvincia" width="60" height="20"></canvas>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="js/my_charts.js"></script>
+</body>
+
+</html>

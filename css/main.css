@@ -1,0 +1,10 @@
+.partido {
+    background: #388E3C
+    ;
+    color: white;
+}
+
+.menu-list a.is-active {
+    background-color: #388E3C;
+    color: white;
+}
