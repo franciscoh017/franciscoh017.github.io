@@ -3,7 +3,7 @@ var barChartData = {
     datasets: [{
         label: 'Masculino',
         backgroundColor:
-            'rgba(54, 162, 235, 0.5)',
+            '#2196F3',
         yAxisID: 'y-axis-1',
         data: [
             1,
@@ -16,7 +16,7 @@ var barChartData = {
         ]
     }, {
         label: 'Femenino',
-        backgroundColor: 'rgba(255, 99, 132, 0.5) ',
+        backgroundColor: '#EC407A',
         yAxisID: 'y-axis-2',
         data: [
             3,
@@ -30,7 +30,7 @@ var barChartData = {
     }]
 
 };
-var cantPorProvincia= [
+var cantPorProvincia = [
     1,
     3,
     2,
@@ -48,7 +48,7 @@ var barChartData2 = {
     datasets: [{
         label: 'Cantidad',
         data: cantPorProvincia,
-        backgroundColor: palette('tol', cantPorProvincia.length).map(function (hex) {
+        backgroundColor: palette('tol-rainbow', cantPorProvincia.length).map(function (hex) {
             return '#' + hex;
         }),
     }]
@@ -58,8 +58,10 @@ pieChartData = {
     datasets: [{
         data: [324, 50],
         backgroundColor:
-            ['rgba(54, 162, 235, 0.75)',
-                'rgba(238, 244, 66, 0.75)']
+            [
+                '#4CAF50',
+                '#FFEE58'
+            ]
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
