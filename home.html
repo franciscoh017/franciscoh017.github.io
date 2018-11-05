@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://codepen.io/anon/pen/aWapBE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <title>Home | PTD</title>
 </head>
 
@@ -69,108 +70,115 @@
     </nav>
 
     <section id="page" class="section">
-        <div class="container is-fluid">
-            <div class="columns">
-                <div class="column is-one-third-tablet is-one-fifth-desktop">
-                    <div class="box">
-                        <aside class="menu">
-                            <p class="menu-label">
-                                General
-                            </p>
-                            <ul class="menu-list">
-                                <li><a class="is-active">Dashboard</a></li>
-                            </ul>
-                            <p class="menu-label">
-                                Político
-                            </p>
-                            <ul class="menu-list">
-                                <li><a>Comité</a></li>
-                                <li><a>Miembros</a></li>
-                            </ul>
-                            <p class="menu-label">
-                                Informes
-                            </p>
-                            <ul class="menu-list">
-                                <li>
-                                    <a class="menu-label">Informes Partido</a>
-                                    <ul>
-                                        <li><a>Miembros</a></li>
-                                        <li><a>Registros Por Día</a></li>
-                                        <li><a>Cantidad de Miembros</a></li>
-                                        <li><a>No Válido</a></li>
-                                        <li><a>Cantidad Municipal</a></li>
-                                        <li><a>Cantidad Provincial</a></li>
-                                        <li><a>Cantidad Sector</a></li>
-                                        <li><a>Seguidores</a></li>
-                                        <li><a>Resumen por Municipio</a></li>
-                                        <li><a>Resumen por Provincia</a></li>
-                                    </ul>
-                                    <a class="menu-label">Informes Padrón</a>
-                                    <ul>
-                                        <li><a>Miembros del Partido</a></li>
-                                        <li><a>Voto Afectivo</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            General
+                        </p>
+                        <ul class="menu-list">
+                            <li><a class="is-active">Dashboard</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Político
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Comité</a></li>
+                            <li><a>Miembros</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Informes
+                        </p>
+                        <ul class="menu-list">
+                            <li>
+                                <a class="menu-label">Informes Partido</a>
+                                <ul>
+                                    <li><a>Miembros</a></li>
+                                    <li><a>Registros Por Día</a></li>
+                                    <li><a>Cantidad de Miembros</a></li>
+                                    <li><a>No Válido</a></li>
+                                    <li><a>Cantidad Municipal</a></li>
+                                    <li><a>Cantidad Provincial</a></li>
+                                    <li><a>Cantidad Sector</a></li>
+                                    <li><a>Seguidores</a></li>
+                                    <li><a>Resumen por Municipio</a></li>
+                                    <li><a>Resumen por Provincia</a></li>
+                                </ul>
+                                <a class="menu-label">Informes Padrón</a>
+                                <ul>
+                                    <li><a>Miembros del Partido</a></li>
+                                    <li><a>Voto Afectivo</a></li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                            <p class="menu-label">
-                                Administración
-                            </p>
-                            <ul class="menu-list">
-                                <li><a>Usuarios</a></li>
-                                <li><a>Roles de Seguridad</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-
+                        <p class="menu-label">
+                            Administración
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Usuarios</a></li>
+                            <li><a>Roles de Seguridad</a></li>
+                        </ul>
+                    </aside>
                 </div>
-                <div class="column">
-                    <div class="box">
-                        <div class="title">
-                            Dashboard
-                        </div>
-                        <div class="is-hidden-mobile">
-                            <div class="tile is-mobile is-ancestor">
-                                <div class="tile is-vertical">
-                                    <div class="tile">
-                                        <div class="tile is-parent">
-                                            <article class="tile is-child notification">
-                                                <div class="content">
-                                                    <div class="chart-container" style="position: relative; width:100%;">
-                                                        <canvas id="cantPorEdad"></canvas>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="tile is-parent">
-                                            <article class="tile is-child notification">
-                                                <p class="content">
-                                                    <div class="chart-container" style="position: relative; width:100%;">
-                                                        <canvas id="cantPorTipo"></canvas>
-                                                    </div>
-                                                </p>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="tile is-parent">
-                                        <article class="tile is-child notification">
-                                            <div class="content">
-                                                <!-- Content -->
-                                                <div class="chart-container" style="position: relative; width:100%;">
-                                                    <canvas id="cantPorProvincia" width="60" height="20"></canvas>
-                                                </div>
+
+            </div>
+            <div class="column is-9">
+                <div class="box">
+                    <div class="title">
+                        Dashboard
+                    </div>
+                    <div class="is-hidden-mobile">
+
+                        <section class="section">
+                            <div class="columns">
+                                <div class="column is-6-desktop">
+
+                                    <article class="notification">
+
+                                        <div class="content">
+                                            <div class="chart-container" style="position: relative; height:100%; width:100%">
+                                                <canvas id="cantPorEdad"></canvas>
                                             </div>
-                                        </article>
-                                    </div>
+                                        </div>
+
+                                    </article>
+
+                                </div>
+                                <div class="column is-6-desktop">
+                                    <article class="notification">
+
+                                        <div class="content">
+                                            <div class="chart-container" style="position: relative; height:100%; width:90%">
+                                                <canvas id="cantPorTipo"></canvas>
+                                            </div>
+                                        </div>
+
+                                    </article>
                                 </div>
                             </div>
-                        </div>
-                        <div class="is-hidden-tablet">
-                            <div class="notification is-warning">
-                                El Dashboard no está disponible para esta resolución. Intente girando su dispositivo
-                                móvil
-                                o desde una tablet/ordenador.
+                            <div class="columns">
+                                <div class="column">
+                                    <article class="notification">
+
+                                        <div class="content">
+                                            <div class="chart-container" style="position: relative; height:100%; width:90%">
+                                                <canvas id="cantPorProvincia"></canvas>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </div>
                             </div>
+                        </section>
+                    </div>
+                    <div class="is-hidden-tablet">
+                        <div class="notification is-warning">
+                            El Dashboard no está disponible para esta resolución. Intente girando su
+                            dispositivo
+                            móvil
+                            o desde una tablet/ordenador.
                         </div>
                     </div>
                 </div>
@@ -178,14 +186,14 @@
                         <canvas id="cantPorTipo"></canvas>
                         <canvas id="cantPorProvincia" width="60" height="20"></canvas> -->
             </div>
-        </div>
+
 
 
 
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+
     <script src="js/my_charts.js"></script>
     <script>
         $(document).ready(function () {

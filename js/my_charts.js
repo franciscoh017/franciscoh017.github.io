@@ -1,5 +1,5 @@
 var barChartData = {
-    labels: ['Menor de 18', '18-25', '26-35', '36-45', '46-55', 'Mayor de 56'],
+    labels: ['< 18', '18-25', '26-35', '36-45', '46-55', '> 56'],
     datasets: [{
         label: 'Masculino',
         backgroundColor:
@@ -71,11 +71,11 @@ pieChartData = {
     ]
 };
 
-window.onload = function () {
-    var ctx = document.getElementById("cantPorEdad");
-    var ctx2 = document.getElementById("cantPorTipo");
-    var ctx3 = document.getElementById("cantPorProvincia");
-    window.myBar = new Chart(ctx, {
+    let ctx = document.getElementById("cantPorEdad");
+    let ctx2 = document.getElementById("cantPorTipo");
+    let ctx3 = document.getElementById("cantPorProvincia");
+
+    let edadChart = new Chart(ctx, {
         type: 'bar',
         data: barChartData,
         options: {
@@ -117,24 +117,30 @@ window.onload = function () {
         }
     });
 
-    var myPieChart = new Chart(ctx2, {
+    let tipoChart = new Chart(ctx2, {
         type: 'pie',
         data: pieChartData,
         options: {
             title: {
                 display: true,
                 text: 'Cantidad por Tipo Persona'
-            }
-        }
+            },
+             // Boolean - whether or not the chart should be responsive and resize when the browser does.
+
+             responsive: true,
+
+             // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+ 
+             maintainAspectRatio: true
+                    }
     });
 
-    window.myBar2 = new Chart(ctx3, {
+    let provinciaChart = new Chart(ctx3, {
         type: 'bar',
         data: barChartData2,
         options: {
             responsive: true
         }
     });
-};
 
 
