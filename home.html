@@ -69,117 +69,119 @@
     </nav>
 
     <section id="page" class="section">
-        <div class="columns">
-            <div class="column is-one-third-tablet is-one-fifth-desktop">
-                <div class="box">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            General
-                        </p>
-                        <ul class="menu-list">
-                            <li><a class="is-active">Dashboard</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Político
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Comité</a></li>
-                            <li><a>Miembros</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Informes
-                        </p>
-                        <ul class="menu-list">
-                            <li>
-                                <a class="menu-label">Informes Partido</a>
-                                <ul>
-                                    <li><a>Miembros</a></li>
-                                    <li><a>Registros Por Día</a></li>
-                                    <li><a>Cantidad de Miembros</a></li>
-                                    <li><a>No Válido</a></li>
-                                    <li><a>Cantidad Municipal</a></li>
-                                    <li><a>Cantidad Provincial</a></li>
-                                    <li><a>Cantidad Sector</a></li>
-                                    <li><a>Seguidores</a></li>
-                                    <li><a>Resumen por Municipio</a></li>
-                                    <li><a>Resumen por Provincia</a></li>
-                                </ul>
-                                <a class="menu-label">Informes Padrón</a>
-                                <ul>
-                                    <li><a>Miembros del Partido</a></li>
-                                    <li><a>Voto Afectivo</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column is-one-third-tablet is-one-fifth-desktop">
+                    <div class="box">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                General
+                            </p>
+                            <ul class="menu-list">
+                                <li><a class="is-active">Dashboard</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                Político
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>Comité</a></li>
+                                <li><a>Miembros</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                Informes
+                            </p>
+                            <ul class="menu-list">
+                                <li>
+                                    <a class="menu-label">Informes Partido</a>
+                                    <ul>
+                                        <li><a>Miembros</a></li>
+                                        <li><a>Registros Por Día</a></li>
+                                        <li><a>Cantidad de Miembros</a></li>
+                                        <li><a>No Válido</a></li>
+                                        <li><a>Cantidad Municipal</a></li>
+                                        <li><a>Cantidad Provincial</a></li>
+                                        <li><a>Cantidad Sector</a></li>
+                                        <li><a>Seguidores</a></li>
+                                        <li><a>Resumen por Municipio</a></li>
+                                        <li><a>Resumen por Provincia</a></li>
+                                    </ul>
+                                    <a class="menu-label">Informes Padrón</a>
+                                    <ul>
+                                        <li><a>Miembros del Partido</a></li>
+                                        <li><a>Voto Afectivo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-                        <p class="menu-label">
-                            Administración
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Usuarios</a></li>
-                            <li><a>Roles de Seguridad</a></li>
-                        </ul>
-                    </aside>
-                </div>
-
-            </div>
-            <div class="column">
-                <div class="box">
-                    <div class="title">
-                        Dashboard
+                            <p class="menu-label">
+                                Administración
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>Usuarios</a></li>
+                                <li><a>Roles de Seguridad</a></li>
+                            </ul>
+                        </aside>
                     </div>
-                    <div class="is-hidden-mobile">
-                        <div class="tile is-ancestor">
-                            <div class="tile is-vertical is-6">
-                                <div class="tile">
-                                    <div class="tile is-parent">
-                                        <article class="tile is-child notification">
-                                            <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Edades y Sexo</p>
-                                            <div class="content">
-                                                <!-- Content -->
-                                                <canvas id="cantPorEdad"></canvas>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child notification">
-                                    <div class="content">
-                                        <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Tipo Miembro</p>
-                                        <div class="content">
-                                            <!-- Content -->
-                                            <canvas id="cantPorTipo"></canvas>
+
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <div class="title">
+                            Dashboard
+                        </div>
+                        <div class="is-hidden-mobile">
+                            <div class="tile is-mobile is-ancestor">
+                                <div class="tile is-vertical">
+                                    <div class="tile">
+                                        <div class="tile is-parent">
+                                            <article class="tile is-child notification">
+                                                <div class="content">
+                                                    <div class="chart-container" style="position: relative; width:100%;">
+                                                        <canvas id="cantPorEdad"></canvas>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="tile is-parent">
+                                            <article class="tile is-child notification">
+                                                <p class="content">
+                                                    <div class="chart-container" style="position: relative; width:100%;">
+                                                        <canvas id="cantPorTipo"></canvas>
+                                                    </div>
+                                                </p>
+                                            </article>
                                         </div>
                                     </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="tile is-ancestor">
-                            <div class="tile is-vertical is-12">
-                                <div class="tile">
                                     <div class="tile is-parent">
                                         <article class="tile is-child notification">
-                                            <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Provincia</p>
                                             <div class="content">
                                                 <!-- Content -->
-                                                <canvas id="cantPorProvincia" width="60" height="20"></canvas>
+                                                <div class="chart-container" style="position: relative; width:100%;">
+                                                    <canvas id="cantPorProvincia" width="60" height="20"></canvas>
+                                                </div>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="is-hidden-tablet">
-                        <div class="notification is-warning">
-                            El Dashboard no está disponible para esta resolución. Intente girando su dispositivo móvil
-                            o desde una tablet/ordenador.
+                        <div class="is-hidden-tablet">
+                            <div class="notification is-warning">
+                                El Dashboard no está disponible para esta resolución. Intente girando su dispositivo
+                                móvil
+                                o desde una tablet/ordenador.
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- <canvas id="cantPorEdad"></canvas>
+                        <canvas id="cantPorTipo"></canvas>
+                        <canvas id="cantPorProvincia" width="60" height="20"></canvas> -->
             </div>
         </div>
+
+
+
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

@@ -79,8 +79,13 @@ window.onload = function () {
         type: 'bar',
         data: barChartData,
         options: {
-            aspectRatio: 1.5,
+            // Boolean - whether or not the chart should be responsive and resize when the browser does.
+
             responsive: true,
+
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+
+            maintainAspectRatio: true,
             title: {
                 display: true,
                 text: 'Cantidad por Sexo y Edad'
@@ -116,7 +121,10 @@ window.onload = function () {
         type: 'pie',
         data: pieChartData,
         options: {
-
+            title: {
+                display: true,
+                text: 'Cantidad por Tipo Persona'
+            }
         }
     });
 
