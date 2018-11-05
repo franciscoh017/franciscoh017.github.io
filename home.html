@@ -123,45 +123,53 @@
                     <div class="title">
                         Dashboard
                     </div>
-                    <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-6">
-                            <div class="tile">
-                                <div class="tile is-parent">
-                                    <article class="tile is-child notification">
-                                        <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Edades y Sexo</p>
-                                        <div class="content">
-                                            <!-- Content -->
-                                            <canvas id="cantPorEdad"></canvas>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification">
-                                <div class="content">
-                                    <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Tipo Miembro</p>
-                                    <div class="content">
-                                        <!-- Content -->
-                                        <canvas id="cantPorTipo"></canvas>
+                    <div class="is-hidden-mobile">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-6">
+                                <div class="tile">
+                                    <div class="tile is-parent">
+                                        <article class="tile is-child notification">
+                                            <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Edades y Sexo</p>
+                                            <div class="content">
+                                                <!-- Content -->
+                                                <canvas id="cantPorEdad"></canvas>
+                                            </div>
+                                        </article>
                                     </div>
                                 </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-12">
-                            <div class="tile">
-                                <div class="tile is-parent">
-                                    <article class="tile is-child notification">
-                                        <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Provincia</p>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <div class="content">
+                                        <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Tipo Miembro</p>
                                         <div class="content">
                                             <!-- Content -->
-                                            <canvas id="cantPorProvincia" width="60" height="20"></canvas>
+                                            <canvas id="cantPorTipo"></canvas>
                                         </div>
-                                    </article>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-12">
+                                <div class="tile">
+                                    <div class="tile is-parent">
+                                        <article class="tile is-child notification">
+                                            <p class="is-size-6-mobile is-size-3-tablet">Cantidad por Provincia</p>
+                                            <div class="content">
+                                                <!-- Content -->
+                                                <canvas id="cantPorProvincia" width="60" height="20"></canvas>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="is-hidden-tablet is-hidden-desktop">
+                        <div class="notification is-warning">
+                            El Dashboard no está disponible para esta resolución. Intente girando su dispositivo móvil
+                            o desde una tablet y ordenador.
                         </div>
                     </div>
                 </div>
