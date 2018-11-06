@@ -132,43 +132,36 @@
                     <div class="is-hidden-mobile">
 
                         <section class="section">
-                            <div class="columns">
-                                <div class="column is-6-desktop">
-
-                                    <article class="notification">
-
-                                        <div class="content">
-                                            <div class="chart-container" style="position: relative; height:100%; width:100%">
-                                                <canvas id="cantPorEdad"></canvas>
-                                            </div>
+                            <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <div class="panel">
+                                        <p class="panel-heading has-text-weight-semibold">
+                                            Cantidad por Edades y Sexo  
+                                        </p>
+                                        <div class="panel-block">
+                                            <canvas id="cantPorEdad" width="400" height="400">
                                         </div>
-
-                                    </article>
-
+                                    </div>
                                 </div>
-                                <div class="column is-6-desktop">
-                                    <article class="notification">
-
-                                        <div class="content">
-                                            <div class="chart-container" style="position: relative; height:100%; width:90%">
-                                                <canvas id="cantPorTipo"></canvas>
-                                            </div>
+                                <div class="column is-6">
+                                    <div class="panel">
+                                        <p class="panel-heading has-text-weight-semibold">
+                                           Cantidad por Tipo Persona
+                                        </p>
+                                        <div class="panel-block">
+                                            <canvas id="cantPorTipo" width="400" height="400"></canvas>
                                         </div>
-
-                                    </article>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="columns">
-                                <div class="column">
-                                    <article class="notification">
-
-                                        <div class="content">
-                                            <div class="chart-container" style="position: relative; height:100%; width:90%">
-                                                <canvas id="cantPorProvincia"></canvas>
-                                            </div>
+                                <div class="column is-12">
+                                    <div class="panel">
+                                        <p class="panel-heading has-text-weight-semibold">
+                                            Cantidad por Provincia
+                                        </p>
+                                        <div class="panel-block">
+                                            <canvas id="cantPorProvincia" width="400" height="100"></canvas>
                                         </div>
-
-                                    </article>
+                                    </div>
                                 </div>
                             </div>
                         </section>

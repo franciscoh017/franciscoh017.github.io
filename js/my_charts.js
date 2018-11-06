@@ -5,6 +5,10 @@ var barChartData = {
         backgroundColor:
             '#2196F3',
         yAxisID: 'y-axis-1',
+        borderColor: '#777',
+        borderWidth: 1,
+        hoverBorderColor: '#222',
+        hoverBorderWidth: 2,
         data: [
             1,
             3,
@@ -18,6 +22,10 @@ var barChartData = {
         label: 'Femenino',
         backgroundColor: '#EC407A',
         yAxisID: 'y-axis-2',
+        borderColor: '#777',
+        borderWidth: 1,
+        hoverBorderColor: '#222',
+        hoverBorderWidth: 2,
         data: [
             3,
             4,
@@ -51,6 +59,10 @@ var barChartData2 = {
         backgroundColor: palette('tol-rainbow', cantPorProvincia.length).map(function (hex) {
             return '#' + hex;
         }),
+        borderColor: '#777',
+        borderWidth: 1,
+        hoverBorderColor: '#222',
+        hoverBorderWidth: 2
     }]
 };
 
@@ -61,7 +73,11 @@ pieChartData = {
             [
                 '#4CAF50',
                 '#FFEE58'
-            ]
+            ],
+        borderColor: '#777',
+        borderWidth: 1,
+        hoverBorderColor: '#222',
+        hoverBorderWidth: 2
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -71,76 +87,63 @@ pieChartData = {
     ]
 };
 
-    let ctx = document.getElementById("cantPorEdad");
-    let ctx2 = document.getElementById("cantPorTipo");
-    let ctx3 = document.getElementById("cantPorProvincia");
+let ctx = document.getElementById("cantPorEdad");
+let ctx2 = document.getElementById("cantPorTipo");
+let ctx3 = document.getElementById("cantPorProvincia");
 
-    let edadChart = new Chart(ctx, {
-        type: 'bar',
-        data: barChartData,
-        options: {
-            // Boolean - whether or not the chart should be responsive and resize when the browser does.
+let edadChart = new Chart(ctx, {
+    type: 'bar',
+    data: barChartData,
+    options: {
+        // Boolean - whether or not the chart should be responsive and resize when the browser does.
 
-            responsive: true,
+        responsive: true,
 
-            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+        // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
 
-            maintainAspectRatio: true,
-            title: {
-                display: true,
-                text: 'Cantidad por Sexo y Edad'
-            },
-            tooltips: {
-                mode: 'index',
-                intersect: true
-            },
-            scales: {
-                yAxes:
-                    [{
+        maintainAspectRatio: true,
+        tooltips: {
+            mode: 'index',
+            intersect: true
+        },
+        scales: {
+            yAxes:
+                [{
 
-                        ticks: { autoSkip: true },
-                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-                        display: true,
-                        position: 'left',
-                        id: 'y-axis-1',
-                    }, {
-                        ticks: { autoSkip: true },
-                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-                        display: true,
-                        position: 'right',
-                        id: 'y-axis-2',
-                        gridLines: {
-                            drawOnChartArea: false
-                        }
-                    }],
-            }
-        }
-    });
-
-    let tipoChart = new Chart(ctx2, {
-        type: 'pie',
-        data: pieChartData,
-        options: {
-            title: {
-                display: true,
-                text: 'Cantidad por Tipo Persona'
-            },
-             // Boolean - whether or not the chart should be responsive and resize when the browser does.
-
-             responsive: true,
-
-             // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
- 
-             maintainAspectRatio: true
+                    ticks: { autoSkip: true },
+                    type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                    display: true,
+                    position: 'left',
+                    id: 'y-axis-1',
+                }, {
+                    ticks: { autoSkip: true },
+                    type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                    display: true,
+                    position: 'right',
+                    id: 'y-axis-2',
+                    gridLines: {
+                        drawOnChartArea: false
                     }
-    });
-
-    let provinciaChart = new Chart(ctx3, {
-        type: 'bar',
-        data: barChartData2,
-        options: {
-            responsive: true
+                }],
         }
-    });
+    }
+});
+
+let tipoChart = new Chart(ctx2, {
+    type: 'doughnut',
+    data: pieChartData,
+    options: {
+        responsive: true,
+        maintainAspectRatio: true
+    }
+});
+
+let provinciaChart = new Chart(ctx3, {
+    type: 'bar',
+    data: barChartData2,
+    options: {
+        responsive: true
+    }
+});
 
 
