@@ -1,3 +1,6 @@
+var d = new Date();
+document.getElementById("date").innerHTML = d.toDateString();
+
 var barChartData = {
     labels: ['< 18', '18-25', '26-35', '36-45', '46-55', '> 56'],
     datasets: [{
@@ -62,7 +65,7 @@ var barChartData2 = {
         borderColor: '#777',
         borderWidth: 1,
         hoverBorderColor: '#222',
-        hoverBorderWidth: 2
+        hoverBorderWidth: 2 
     }]
 };
 
