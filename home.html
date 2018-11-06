@@ -69,136 +69,229 @@
         </div>
     </nav>
 
-    <section id="page" class="section">
+    <div class="wrapper">
         <div class="columns">
-            <div class="column">
-                <div class="box">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            General
-                        </p>
-                        <ul class="menu-list">
-                            <li><a class="is-active">Dashboard</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Político
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Comité</a></li>
-                            <li><a>Miembros</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Informes
-                        </p>
-                        <ul class="menu-list">
-                            <li>
-                                <a class="menu-label">Informes Partido</a>
-                                <ul>
-                                    <li><a>Miembros</a></li>
-                                    <li><a>Registros Por Día</a></li>
-                                    <li><a>Cantidad de Miembros</a></li>
-                                    <li><a>No Válido</a></li>
-                                    <li><a>Cantidad Municipal</a></li>
-                                    <li><a>Cantidad Provincial</a></li>
-                                    <li><a>Cantidad Sector</a></li>
-                                    <li><a>Seguidores</a></li>
-                                    <li><a>Resumen por Municipio</a></li>
-                                    <li><a>Resumen por Provincia</a></li>
-                                </ul>
-                                <a class="menu-label">Informes Padrón</a>
-                                <ul>
-                                    <li><a>Miembros del Partido</a></li>
-                                    <li><a>Voto Afectivo</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+            <div class="column is-2 aside">
+                <aside class="menu">
+                    <p class="menu-label">
+                        General
+                    </p>
+                    <ul class="menu-list">
+                        <li><a class="is-active">Dashboard</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Político
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Comité</a></li>
+                        <li><a>Miembros</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Informes
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="menu-label">Informes Partido</a>
+                            <ul>
+                                <li><a>Miembros</a></li>
+                                <li><a>Registros Por Día</a></li>
+                                <li><a>Cantidad de Miembros</a></li>
+                                <li><a>No Válido</a></li>
+                                <li><a>Cantidad Municipal</a></li>
+                                <li><a>Cantidad Provincial</a></li>
+                                <li><a>Cantidad Sector</a></li>
+                                <li><a>Seguidores</a></li>
+                                <li><a>Resumen por Municipio</a></li>
+                                <li><a>Resumen por Provincia</a></li>
+                            </ul>
+                            <a class="menu-label">Informes Padrón</a>
+                            <ul>
+                                <li><a>Miembros del Partido</a></li>
+                                <li><a>Voto Afectivo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                        <p class="menu-label">
-                            Administración
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Usuarios</a></li>
-                            <li><a>Roles de Seguridad</a></li>
-                        </ul>
-                    </aside>
-                </div>
-
+                    <p class="menu-label">
+                        Administración
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Usuarios</a></li>
+                        <li><a>Roles de Seguridad</a></li>
+                    </ul>
+                </aside>
             </div>
-            <div class="column is-9">
-                <div class="box">
-                    <div class="level">
-                        <div class="level-left">
-                            <div class="level-item">
-                                <div class="title has-text-dark"><i class="fa fa-tachometer-alt"></i> Dashboard</div>
+            <main class="column main">
+                <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
+                    </ul>
+                </nav>
+
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="title has-text-primary"><i class="fa fa-tachometer-alt"></i> Dashboard</div>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <div id="date" class="tag is-dark">
+                               
                             </div>
                         </div>
-                        <div class="level-right">
-                            <div class="level-item">
-                                <div id="date" class="tag is-info">
-                                   
+                    </div>
+                </div>
+
+                <!-- <div class="columns is-multiline">
+                    <div class="column">
+                        <div class="box notification is-primary">
+                            <div class="heading">Top Seller Total</div>
+                            <div class="title">56,950</div>
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Sales $</div>
+                                        <div class="title is-5">250K</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Overall $</div>
+                                        <div class="title is-5">750K</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Sales %</div>
+                                        <div class="title is-5">25%</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-
-                        <section class="section">
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <div class="panel">
-                                        <p class="panel-heading has-text-weight-semibold">
-                                            Cantidad por Edades y Sexo
-                                        </p>
-                                        <div class="panel-block">
-                                            <canvas id="cantPorEdad" width="400" height="400">
-                                        </div>
+                    <div class="column">
+                        <div class="box notification is-warning">
+                            <div class="heading">Revenue / Expenses</div>
+                            <div class="title">55% / 45%</div>
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Rev Prod $</div>
+                                        <div class="title is-5">30%</div>
                                     </div>
                                 </div>
-                                <div class="column is-6">
-                                    <div class="panel">
-                                        <p class="panel-heading has-text-weight-semibold">
-                                            Cantidad por Tipo Persona
-                                        </p>
-                                        <div class="panel-block">
-                                            <canvas id="cantPorTipo" width="400" height="400"></canvas>
-                                        </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Rev Serv $</div>
+                                        <div class="title is-5">25%</div>
                                     </div>
                                 </div>
-                                <div class="column is-12">
-                                    <div class="panel">
-                                        <p class="panel-heading has-text-weight-semibold">
-                                            Cantidad por Provincia
-                                        </p>
-                                        <div class="panel-block">
-                                            <canvas id="cantPorProvincia" width="400" height="250"></canvas>
-                                        </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Exp %</div>
+                                        <div class="title is-5">45%</div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                    <!--  <div class="is-hidden-tablet">
-                        <div class="notification is-warning">
-                            El Dashboard no está disponible para esta resolución. Intente girando su
-                            dispositivo
-                            móvil
-                            o desde una tablet/ordenador.
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="column">
+                        <div class="box notification is-info">
+                            <div class="heading">Feedback Activity</div>
+                            <div class="title">78% &uarr;</div>
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Pos</div>
+                                        <div class="title is-5">1560</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Neg</div>
+                                        <div class="title is-5">368</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Pos/Neg %</div>
+                                        <div class="title is-5">77% / 23%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box notification is-danger">
+                            <div class="heading">Orders / Returns</div>
+                            <div class="title">75% / 25%</div>
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Orders $</div>
+                                        <div class="title is-5">425K</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Returns $</div>
+                                        <div class="title is-5">106K</div>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="">
+                                        <div class="heading">Success %</div>
+                                        <div class="title is-5">+ 28,5%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="columns is-multiline">
+                    <div class="column is-6">
+                        <div class="panel">
+                            <p class="panel-heading has-text-weight-semibold">
+                                Cantidad por Edades y Sexo
+                            </p>
+                            <div class="panel-block">
+                                <canvas id="cantPorEdad" width="200" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="panel">
+                            <p class="panel-heading has-text-weight-semibold">
+                                Cantidad por Tipo Persona
+                            </p>
+                            <div class="panel-block">
+                                <canvas id="cantPorTipo" width="200" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="panel">
+                            <p class="panel-heading has-text-weight-semibold">
+                                Cantidad por Provincia
+                            </p>
+                            <div class="panel-block">
+                                <canvas id="cantPorProvincia" width="400" height="100"></canvas>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <canvas id="cantPorEdad"></canvas>
-                        <canvas id="cantPorTipo"></canvas>
-                        <canvas id="cantPorProvincia" width="60" height="20"></canvas> -->
-            </div>
+            </main>
+        </div>
+    </div>
 
-
-
-
-    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <script src="js/my_charts.js"></script>
+
     <script>
         $(document).ready(function () {
 
