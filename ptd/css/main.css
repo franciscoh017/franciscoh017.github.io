@@ -8,6 +8,11 @@
     color: white;
 }
 
+.menu-list a.is-accordion {
+    background-color: #666;
+    color: white;
+}
+
 .nav-tag {
     padding-right: 30px
 }
@@ -74,7 +79,7 @@
 
 .aside {
     background: #363636;
-    padding: 2em .2em 0 1em
+    padding: 2em .5em 1em 1em;
 }
 
 .aside a {
@@ -96,4 +101,17 @@
 
 .block {
     margin-top: .5em
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    transition: 0.4s;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.is-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }

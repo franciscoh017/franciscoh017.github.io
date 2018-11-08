@@ -83,7 +83,7 @@
                         Político
                     </p>
                     <ul class="menu-list">
-                        <li><a>Comité</a></li>
+                        <li><a href="comite.html">Comité</a></li>
                         <li><a>Miembros</a></li>
                     </ul>
                     <p class="menu-label">
@@ -91,8 +91,8 @@
                     </p>
                     <ul class="menu-list">
                         <li>
-                            <a class="menu-label">Informes Partido</a>
-                            <ul>
+                            <a class="menu-label accordion">Informes Partido<i class="fas fa-chevron-down fa-lg is-pulled-right"></i></a>
+                            <ul class="is-panel">
                                 <li><a>Miembros</a></li>
                                 <li><a>Registros Por Día</a></li>
                                 <li><a>Cantidad de Miembros</a></li>
@@ -104,8 +104,8 @@
                                 <li><a>Resumen por Municipio</a></li>
                                 <li><a>Resumen por Provincia</a></li>
                             </ul>
-                            <a class="menu-label">Informes Padrón</a>
-                            <ul>
+                            <a class="menu-label accordion">Informes Padrón<i class="fas fa-chevron-down fa-lg is-pulled-right"></i></a>
+                            <ul class="is-panel">
                                 <li><a>Miembros del Partido</a></li>
                                 <li><a>Voto Afectivo</a></li>
                             </ul>
@@ -132,7 +132,7 @@
                 <div class="level">
                     <div class="level-left">
                         <div class="level-item">
-                            <div class="title has-text-primary"><i class="fa fa-tachometer-alt"></i> Dashboard</div>
+                            <div class="title has-text-dark"><i class="fa fa-tachometer-alt "></i> Dashboard</div>
                         </div>
                     </div>
                     <div class="level-right">
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="columns is-multiline">
+                <div class="columns is-multiline">
                     <div class="column">
                         <div class="box notification is-primary">
                             <div class="heading">Top Seller Total</div>
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="columns is-multiline">
                     <div class="column is-6">
@@ -291,6 +291,8 @@
         crossorigin="anonymous"></script>
 
     <script src="js/my_charts.js"></script>
+
+    <script src="js/accordion.js"></script>
 
     <script>
         $(document).ready(function () {
