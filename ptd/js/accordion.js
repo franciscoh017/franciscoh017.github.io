@@ -1,3 +1,6 @@
+var d = new Date();
+document.getElementById("date").innerHTML = d.toDateString();
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
