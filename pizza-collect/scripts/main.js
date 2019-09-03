@@ -4,7 +4,7 @@ const pizzaSelect = document.getElementById("companySelect");
 $.getJSON(
     {
     // Insert your API url Here
-        url: "/scripts/pizzaAPI.json",
+        url: "../pizza-collect/scripts/pizzaAPI.json",
         success(response)
         {
             companies = response.companies;
