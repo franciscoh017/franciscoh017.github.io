@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Family Giving Tree</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body id="home">
+		<section class="hero is-dark is-medium">
+			<div class="hero-head">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar-brand">
+							<a href="/" class="has-text-white">
+								<img id="logo" src="./assets/logo.svg" />
+							</a>
+							<a
+								href="cart.html"
+								class="navbar-burger burger has-text-white mt-5 is-flex is-align-items-center is-hidden-desktop"
+								data-target="navbarMenuHeroA"
+							>
+								<p class="icon is-medium mr-1">
+									<i class="fas fa-shopping-cart fa-lg"></i>
+								</p>
+								<p class="is-size-7">1</p>
+							</a>
+						</div>
+						<div id="navbarMenuHeroA" class="navbar-menu">
+							<div class="navbar-end">
+								<a href="cart.html" class="has-text-white navbar-item">
+									<span class="icon is-large">
+										<i class="fa fa-shopping-cart fa-2x"></i>
+									</span>
+									<span class="px-2">1</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="hero-body"></div>
+		</section>
+		<div class="container">
+			<section class="container section has-text-centered">
+				<section class="py-0 section">
+					<h1 class="title is-2">Grant a Wish. Give a Smile</h1>
+					<p class="content">
+						Thank you for visiting the Holiday Wish Virtual Giving Tree where
+						you can easily grant a wish and send holiday joy and comfort to a
+						child, adult, or senior in the Bay Area who really needs them right
+						now.
+					</p>
+					<a href="#" class="has-text-primary has-text-weight-semibold">
+						How the Virtual Giving Tree works?
+					</a>
+				</section>
+			</section>
+			<section class="pt-0 section">
+				<section class="section py-5 box has-background-light is-shadowless">
+					<div class="columns is-multiline">
+						<div
+							class="column is-full-mobile is-half-tablet is-one-third-desktop"
+						>
+							<figure class="image is-4by3">
+								<img
+									src="https://bulma.io/images/placeholders/640x480.png"
+									alt=""
+								/>
+							</figure>
+						</div>
+						<div class="column">
+							<p class="content">
+								Thank you for visiting the Holiday Wish Virtual Giving Tree
+								where you can easily grant a wish and send holiday joy and
+								warmth to a child, adult, or senior in the Bay Area who really
+								needs it right now. Thank you for visiting the Holiday Wish
+								Virtual Giving Tree where you can easily grant a wish and send
+								holiday joy and warmth to a child, adult, or senior in the Bay
+								Area who really needs it right now.
+							</p>
+							<p>
+								Thank you for visiting the Holiday Wish Virtual Giving Tree
+								where you can easily grant a wish and send holiday joy and
+								warmth to a child, adult, or senior in the Bay Area who really
+								needs it right now. Thank you for visiting the Holiday Wish
+								Virtual Giving Tree where you can easily grant a wish and send
+								holiday joy.
+							</p>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<div class="box has-background-dark has-text-centered">
+								<p class="subtitle has-text-white">
+									300
+									<span class="is-size-6"> /1500 </span>
+								</p>
+								<p class="has-text-white has-text-weight-medium is-size-7">
+									Total Donation (Dollars)
+								</p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box has-background-dark has-text-centered">
+								<p class="subtitle has-text-white">12</p>
+								<p class="has-text-white has-text-weight-medium is-size-7">
+									Total Donation (Gifts)
+								</p>
+							</div>
+						</div>
+						<div class="column">
+							<div class="box has-background-dark has-text-centered">
+								<progress class="progress is-success" value="60" max="100">
+									60%
+								</progress>
+								<p class="has-text-white has-text-weight-medium is-size-7">
+									80% to Donation Goal
+								</p>
+							</div>
+						</div>
+						<div class="column">
+							<button
+								class="box button is-large is-fullwidth has-text-white has-background-primary"
+								onclick="toggleModal()"
+							>
+								Donate Now
+							</button>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="py-3 section">
+				<div class="columns">
+					<div class="column">
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field is-narrow">
+									<label class="py-2 control label">Filter results</label>
+								</div>
+
+								<div class="field is-narrow">
+									<div class="control">
+										<div class="select filter is-fullwidth">
+											<select>
+												<option>Category: All</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="field filter is-narrow">
+									<div class="control">
+										<div class="select is-fullwidth">
+											<select>
+												<option>Age: All</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="field filter is-narrow">
+									<div class="control">
+										<div class="select is-fullwidth">
+											<select>
+												<option>Gender: All</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="field filter is-narrow">
+									<div class="control">
+										<div class="select is-fullwidth">
+											<select>
+												<option>Price: All</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column is-narrow has-text-centered">
+						<a
+							href="cart.html"
+							class="flex has-text-dark is-flex-direction-column"
+						>
+							<p class="mx-0 mb-1 icon">
+								<i class="fas fa-shopping-cart fa-2x"></i>
+							</p>
+							<p class="is-size-7">( 1 ) Items</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="py-1 section">
+				<div class="level">
+					<div class="level-left">
+						<div class="level-item is-size-7">
+							<span class="has-text-weight-semibold"> 15,000 results </span>
+						</div>
+						<div class="level-item">
+							<span class="is-size-7"> Show Results:&nbsp; </span>
+							<select class="select has-text-weight-semibold">
+								<option value="10">10</option>
+								<option value="25">25</option>
+								<option value="50" selected>50</option>
+								<option value="100">100</option></select
+							>&nbsp;
+							<span class="is-size-7"> Per page </span>
+						</div>
+					</div>
+					<div class="level-right">
+						<div class="level-item">
+							<button class="button is-white" disabled>
+								<span class="icon">
+									<i class="fas fa-chevron-left"></i>
+								</span>
+								<span class="is-size-7"> Previous </span>
+							</button>
+
+							<span class="is-size-7">
+								<span class="has-text-weight-semibold"> 1 </span> of 375 pages
+							</span>
+
+							<button class="button is-white has-text-primary is-size-7">
+								<span> Next </span>
+								<span class="icon">
+									<i class="fas fa-chevron-right"></i>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-3 section">
+				<div class="columns">
+					<div
+						class="column is-full-mobile is-half-tablet is-one-quarter-desktop"
+					>
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-square">
+									<img
+										src="https://bulma.io/images/placeholders/480x480.png"
+										alt="Placeholder image"
+									/>
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="mb-5">
+									<p class="is-size-7">Frozen Play Set</p>
+									<p class="is-size-7">
+										$22.99
+										<span class="ml-1 icon is-small has-text-warning tooltip">
+											<i class="fa fa-info-circle"></i>
+											<span class="tooltiptext is-right"
+												>The cost of each gift listed includes tax, shipping,
+												and processing to distribute to the recipient.</span
+											>
+										</span>
+									</p>
+									<br />
+									<p class="is-size-7 is-uppercase">
+										<strong>Dorris</strong>
+									</p>
+
+									<p class="is-size-7">8 yrs | Female</p>
+								</div>
+
+								<div class="buttons is-left">
+									<button class="button is-small is-dark is-outlined">
+										<span class="is-size-7"> Add To Cart </span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="column is-full-mobile is-half-tablet is-one-quarter-desktop"
+					>
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-square">
+									<img
+										src="https://bulma.io/images/placeholders/480x480.png"
+										alt="Placeholder image"
+									/>
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="mb-5">
+									<p class="is-size-7">Frozen Play Set</p>
+									<p class="is-size-7">
+										$22.99
+										<span class="ml-1 icon is-small has-text-warning tooltip">
+											<i class="fa fa-info-circle"></i>
+											<span class="tooltiptext is-right"
+												>The cost of each gift listed includes tax, shipping,
+												and processing to distribute to the recipient.</span
+											>
+										</span>
+									</p>
+									<br />
+									<p class="is-size-7 is-uppercase">
+										<strong>Dorris</strong>
+									</p>
+
+									<p class="is-size-7">8 yrs | Female</p>
+								</div>
+
+								<div class="buttons is-left">
+									<button class="button is-small is-dark">
+										<span class="is-size-7"> Remove From Cart </span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-1 section">
+				<div class="level">
+					<div class="level-left">
+						<div class="level-item is-size-7">
+							<span class="has-text-weight-semibold"> 15,000 results </span>
+						</div>
+						<div class="level-item">
+							<span class="is-size-7"> Show Results:&nbsp; </span>
+							<select class="select has-text-weight-semibold">
+								<option value="10">10</option>
+								<option value="25">25</option>
+								<option value="50" selected>50</option>
+								<option value="100">100</option></select
+							>&nbsp;
+							<span class="is-size-7"> Per page </span>
+						</div>
+					</div>
+					<div class="level-right">
+						<div class="level-item">
+							<button class="button is-white" disabled>
+								<span class="icon">
+									<i class="fas fa-chevron-left"></i>
+								</span>
+								<span class="is-size-7"> Previous </span>
+							</button>
+
+							<span class="is-size-7">
+								<span class="has-text-weight-semibold"> 1 </span> of 375 pages
+							</span>
+
+							<button class="button is-white has-text-primary is-size-7">
+								<span> Next </span>
+								<span class="icon">
+									<i class="fas fa-chevron-right"></i>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="columns is-centered is-mobile">
+					<div class="buttons column is-narrow">
+						<a href="cart.html" class="button is-primary">View Cart</a>
+						<a href="checkout.html" class="button is-primary"
+							>Proceed To Checkout</a
+						>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="pb-6 footer has-background-sub-footer">
+			<div class="columns">
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Contact Us
+					</p>
+					<address>
+						<p>
+							Family Giving Tree <br />
+							Sobrato Center for Nonprofits <br />
+							606 Valley Way, Milpitas CA 95035 <br />
+							<a class="has-text-white" href="tel:+4089463111">(408) 946-3111</a
+							><br />
+							<a class="has-text-white" href="mailto:info@familygivingtree.org"
+								>info@familygivingtree.org</a
+							>
+						</p>
+					</address>
+				</div>
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Get the FGT Newsletter
+					</p>
+					<button class="button is-success is-uppercase is-radiusless">
+						Email Sign-Up
+					</button>
+				</div>
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Connect with FGT
+					</p>
+					<div class="columns is-mobile is-multiline is-variable is-2">
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-facebook-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-twitter-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-linkedin fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-instagram-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-pinterest-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-youtube-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<footer class="pb-6 footer has-background-footer">
+			<div class="columns">
+				<div class="column has-text-white">
+					&copy;&nbsp;2020 Family Giving Tree
+				</div>
+				<div class="column">
+					<figure class="image">
+						<img src="./assets/charityNavigator-logo.jpg" alt="" />
+					</figure>
+				</div>
+				<div class="column"></div>
+			</div>
+		</footer>
+
+		<div id="donate-modal" class="modal is-active">
+			<div class="modal-background" onclick="toggleModal()"></div>
+			<form onsubmit="addDonationToCart(event)" class="modal-card">
+				<header class="modal-card-head has-background-white">
+					<p class="modal-card-title has-text-weight-medium">Donation Amount</p>
+					<button
+						class="delete"
+						aria-label="close"
+						onclick="toggleModal()"
+					></button>
+				</header>
+				<section class="modal-card-body">
+					<div class="columns is-multiline is-mobile radio-buttons-as-buttons">
+						<div class="column is-one-third-desktop is-half-touch">
+							<label
+								class="has-text-centered box is-flex is-flex-direction-column"
+							>
+								<input type="radio" value="360" name="donation" />
+								<span class="is-size-3 has-text-weight-medium">$360</span><br>
+								<span class="is-size-7">Supports gifts for a multi-generational family</span>
+							</label>
+						</div>
+						<div class="column is-one-third-desktop is-half-touch">
+							<label
+								class="has-text-centered box is-flex is-flex-direction-column"
+							>
+								<input type="radio" value="210" name="donation" />
+								<span class="is-size-3 has-text-weight-medium">$210</span><br>
+								<span class="is-size-7">Supports at least 5 seniors</span>
+							</label>
+						</div>
+						<div class="column is-one-third-desktop is-half-touch">
+							<label
+								class="has-text-centered box is-flex is-flex-direction-column"
+							>
+								<input type="radio" value="70" name="donation" />
+								<span class="is-size-3 has-text-weight-medium">$70</span><br>
+								<span class="is-size-7">Supports gifts for 2 teens</span>
+							</label>
+						</div>
+						<div class="column is-one-third-desktop is-half-touch">
+							<label
+								class="has-text-centered box is-flex is-flex-direction-column"
+							>
+								<input type="radio" value="35" name="donation" />
+								<span class="is-size-3 has-text-weight-medium">$35</span><br>
+								<span class="is-size-7">Supports a gift for an adult</span>
+							</label>
+						</div>
+						<div class="column is-one-third-desktop is-half-touch">
+							<label
+								class="has-text-centered box is-flex is-flex-direction-column"
+							>
+								<input type="radio" value="20" name="donation" />
+								<span class="is-size-3 has-text-weight-medium">$20</span><br>
+								<span class="is-size-7">$20 Supports a gift for a child</span>
+							</label>
+						</div>
+					</div>
+				</section>
+				<footer
+					class="modal-card-foot has-background-white is-flex is-justify-content-center"
+				>
+					<div class="buttons">
+						<button type="submit" class="button is-dark is-outlined">
+							<span
+								class="px-5 is-size-6 has-text-weight-medium"
+							>
+								Add To Cart
+							</span>
+						</button>
+					</div>
+				</footer>
+			</form>
+		</div>
+
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+		></script>
+
+		<script>
+			function toggleModal() {
+				const modal = document.getElementById('donate-modal');
+				modal.classList.toggle('is-active');
+			}
+
+			function addDonationToCart(e) {
+				e.preventDefault();
+				return false;
+			}
+
+			document.addEventListener('DOMContentLoaded', function () {
+				var inputs = document.querySelectorAll(
+					'.radio-buttons-as-buttons input'
+				);
+				Array.from(inputs).forEach(function (element) {
+					element.addEventListener('click', function (event) {
+						// remove is-info to the current active button of this group (if there's one)
+						event.target.parentElement.parentElement.parentElement
+							.querySelectorAll('label')
+							.forEach(function (el) {
+								el.classList.remove('has-background-success');
+								el.classList.remove('has-text-white');
+							});
+						// add is-info to the new active
+						event.target.parentElement.classList.add('has-background-success');
+						event.target.parentElement.classList.add('has-text-white');
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Family Giving Tree</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body id="checkout">
+		<nav class="navbar">
+			<div class="navbar-brand">
+				<a href="/" class="has-text-white">
+					<img id="logo" src="./assets/logo-black.svg" />
+				</a>
+				<span
+					class="navbar-burger burger has-text-white"
+					data-target="navbarMenuHeroA"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div id="navbarMenuHeroA" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="cart.html" class="has-text-white navbar-item">
+						<span class="icon is-large">
+							<i class="fa fa-shopping-cart fa-2x"></i>
+						</span>
+						<span class="px-2">1</span>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<h2 class="title">Thank you for bringing joy this holiday season.</h2>
+			<h3 class="mb-3 title is-5">Checkout</h3>
+			<p>
+				Nothing will be mailed to you. The cost of each gift listed includes
+				tax, shipping, and processing to distribute to the recipient.
+			</p>
+		</section>
+		<section class="pt-0 section">
+			<div class="columns">
+				<div class="column">
+					<p class="mb-0 title is-5">Contact Information</p>
+					<hr class="mt-0" />
+					<div class="field is-grouped">
+						<div class="field control is-expanded">
+							<label class="label">First Name</label>
+							<div class="control">
+								<input
+									class="input"
+									type="text"
+									placeholder="Enter First Name"
+								/>
+							</div>
+						</div>
+
+						<div class="field control is-expanded">
+							<label class="label">Last Name</label>
+							<div class="control">
+								<input
+									class="input"
+									type="text"
+									placeholder="Enter Last Name"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="field control is-expanded">
+						<label class="label"
+							>Email Address
+							<span class="has-text-weight-normal has-text-grey">
+								(Please specify work vs personal email address if
+								possible)</span
+							></label
+						>
+						<div class="control">
+							<input
+								class="input"
+								type="email"
+								placeholder="Enter Email Address"
+							/>
+						</div>
+						<p class="help has-text-grey-light">jsmith@example.com</p>
+					</div>
+					<div class="field control is-expanded">
+						<label class="label"
+							>Company Name
+							<span class="has-text-weight-normal has-text-grey"> (Optional)</span></label
+						>
+						<div class="control">
+							<input
+								class="input"
+								type="text"
+								placeholder="Enter Company Name"
+							/>
+						</div>
+					</div>
+					<section class="px-0 section">
+						<p class="mb-0 title is-5">Payment Information</p>
+						<hr class="mt-0" />
+						<div class="list has-background-light">
+							<a class="list-item has-text-grey has-text-weight-medium">
+								<span class="icon">
+									<i class="fa fa-credit-card"></i>
+								</span>
+								Card
+							</a>
+							<a class="list-item has-text-grey has-text-weight-medium">
+								<span class="icon">
+									<i class="fab fa-paypal"></i>
+								</span>
+								Paypal
+							</a>
+						</div>
+					</section>
+					<div class="px-0 buttons">
+						<a href="cart.html" class="button">
+							<span class="px-5 is-size-7"> Edit Cart </span>
+						</a>
+						<a href="thank-you.html" class="button is-primary">
+							<span class="px-5 is-size-7"> Place Your Order </span>
+						</a>
+					</div>
+				</div>
+				<div class="column is-one-third">
+					<div class="mb-5 card is-shadowless">
+						<div class="card-content">
+							<p class="title is-5">Order Summary</p>
+
+							<table class="table is-fullwidth">
+								<tr>
+									<td class="px-0">Subtotal(1 item)</td>
+									<td class="px-0 is-narrow has-text-right">$22.99</td>
+								</tr>
+								<tr>
+									<td class="px-0">Essential Health Kit</td>
+									<td class="px-0 is-narrow has-text-right">$8.00</td>
+								</tr>
+								<tr>
+									<td class="px-0">One-time Donation</td>
+									<td class="px-0 is-narrow has-text-right">$10.00</td>
+								</tr>
+								<tr>
+									<td class="px-0">
+										Tax, Shipping, Processing
+										<span class="ml-1 icon has-text-warning tooltip">
+											<i class="fa fa-info-circle"></i>
+											<span class="tooltiptext is-size-7 is-center">
+												Nothing will be mailed to you. The cost of each gift
+												listed includes tax, shipping, and processing to
+												distribute to the recipient.
+											</span>
+										</span>
+									</td>
+									<td class="px-0 is-narrow has-text-right">$0.00</td>
+								</tr>
+								<tr class="total">
+									<td class="px-0 has-text-weight-bold is-size-4">Total</td>
+									<td
+										class="px-0 is-narrow has-text-right has-text-weight-bold is-size-4"
+									>
+										$40.99
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="card is-shadowless">
+						<div class="card-content">
+							<div class="columns is-mobile">
+								<div class="column is-narrow">
+									<figure class="image is-96x96">
+										<img
+											src="https://bulma.io/images/placeholders/480x480.png"
+											alt="Placeholder image"
+										/>
+									</figure>
+								</div>
+								<div
+									class="is-flex column is-flex-direction-column is-justify-content-space-between"
+								>
+									<div>
+										<p class="has-text-weight-semibold is-size-7">DORRIS</p>
+										<p class="is-size-7">8 yrs | Female</p>
+										<p class="is-size-7">Frozen Play Set</p>
+									</div>
+
+									<p class="is-size-7">Qty: 1</p>
+								</div>
+								<div class="column is-narrow">
+									<p class="has-text-weight-bold">$10.00</p>
+								</div>
+							</div>
+							<hr class="mt-0" />
+							<div class="columns is-mobile">
+								<div class="column is-narrow">
+									<figure class="image is-96x96">
+										<img
+											src="https://bulma.io/images/placeholders/480x480.png"
+											alt="Placeholder image"
+										/>
+									</figure>
+								</div>
+								<div
+									class="is-flex column is-flex-direction-column is-justify-content-space-between"
+								>
+									<div>
+										<p class="has-text-weight-semibold is-size-7">
+											Would you like to add an Essential Health Kit to your
+											gift?
+										</p>
+										<p class="is-size-7">
+											Includes a toothbrush, toothpaste, floss, hand sanitizer,
+											and a mask
+											<span class="ml-1 icon is-small has-text-warning tooltip">
+												<i class="fa fa-info-circle"></i>
+												<span class="tooltiptext is-size-7 is-center">
+													Dental health is something vitally important to all of
+													us and many of our recipients don't have access to
+													dental care so every holiday season we try to help
+													out. And, in 2020 we're adding additional health items
+													to keep recipients safe. Your small, extra donation
+													will help so consider donating more than one.
+												</span>
+											</span>
+										</p>
+									</div>
+
+									<p class="is-size-7">Qty: 1</p>
+								</div>
+								<div class="column is-narrow">
+									<p class="has-text-weight-bold">$8.00</p>
+								</div>
+							</div>
+							<hr class="mt-0" />
+							<div class="columns is-mobile">
+								<div class="column is-narrow">
+									<figure class="image is-96x96">
+										<img
+											src="https://bulma.io/images/placeholders/480x480.png"
+											alt="Placeholder image"
+										/>
+									</figure>
+								</div>
+								<div
+									class="is-flex column is-flex-direction-column is-justify-content-space-between"
+								>
+									<div>
+										<p class="has-text-weight-semibold is-size-7">
+											Would you like to make one-time donation?
+										</p>
+									</div>
+
+									<p class="is-size-7">Qty: 1</p>
+								</div>
+								<div class="column is-narrow">
+									<p class="has-text-weight-bold">$10.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="pb-6 footer has-background-sub-footer">
+			<div class="columns">
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Contact Us
+					</p>
+					<address>
+						<p>
+							Family Giving Tree <br />
+							Sobrato Center for Nonprofits <br />
+							606 Valley Way, Milpitas CA 95035 <br />
+							<a class="has-text-white" href="tel:+4089463111">(408) 946-3111</a
+							><br />
+							<a class="has-text-white" href="mailto:info@familygivingtree.org"
+								>info@familygivingtree.org</a
+							>
+						</p>
+					</address>
+				</div>
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Get the FGT Newsletter
+					</p>
+					<button class="button is-success is-uppercase is-radiusless">
+						Email Sign-Up
+					</button>
+				</div>
+				<div class="column content has-text-white">
+					<p
+						class="has-text-white has-text-weight-medium is-size-4 is-uppercase"
+					>
+						Connect with FGT
+					</p>
+					<div class="columns is-mobile is-multiline is-variable is-2">
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-facebook-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-twitter-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-linkedin fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-instagram-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-pinterest-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+						<div class="column is-narrow">
+							<a class="has-text-white">
+								<span class="icon is-large">
+									<i class="fab fa-youtube-square fa-3x"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<footer class="pb-6 footer has-background-footer">
+			<div class="columns">
+				<div class="column has-text-white">
+					&copy;&nbsp;2020 Family Giving Tree
+				</div>
+				<div class="column">
+					<figure class="image">
+						<img src="./assets/charityNavigator-logo.jpg" alt="" />
+					</figure>
+				</div>
+				<div class="column"></div>
+			</div>
+		</footer>
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+		></script>
+	</body>
+</html>

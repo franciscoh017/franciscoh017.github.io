@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
+
+// 2. Set your own initial variables
+$card-radius: 0.25rem;
+
+// Add pink and its invert
+$blueg: #0097c5;
+$blueg-invert: #fff;
+
+// Add a serif family
+$family-serif: "Montserrat",
+serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blueg;
+$primary-invert: $blueg-invert;
+// Use the existing orange as the danger color
+$success: #99ca3c;
+$danger: #aa4e69;
+$warning: #ffc20e;
+// Use the new serif family
+$family-primary: $family-serif;
+
+// 4. Setup your Custom Colors
+$footer: #7AC5C9;
+$footer-invert: findColorInvert($footer);
+$sub-footer:#00589D;
+$sub-footer-invert: findColorInvert($sub-footer);
+
+// 5. Add new color variables to the color map.
+@import "../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: ("footer": ($footer, $footer-invert),
+  "sub-footer": ($sub-footer, $sub-footer-invert));
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+
+  .column {
+    .card {
+      .card-image {
+        img {
+          border-top-left-radius: $card-radius;
+          border-top-right-radius: $card-radius;
+        }
+      }
+
+      overflow: visible;
+    }
+  }
+
+  .image{
+    &.is-96x96 {
+      @media only screen and (max-width: 768px) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  footer {
+    figure {
+      width: 20rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .modal {
+
+    .modal-card-head,
+    .modal-card-foot {
+      border: unset;
+    }
+
+    .modal-card-body {
+      .columns {
+        .column {
+          .box {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    &:hover {
+      .tooltiptext {
+        visibility: visible;
+      }
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: 15rem;
+      background-color: white;
+      color: black;
+      box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      padding: 0.75rem;
+
+      /* Position the tooltip */
+      position: absolute;
+      top: 1.5rem;
+      z-index: 10;
+
+      &.is-right {
+        left: 105%;
+      }
+
+      &.is-left {
+        right: 105%;
+      }
+
+      &.is-center {
+        left: 50%;
+        margin-left: -6rem;
+      }
+    }
+  }
+
+  #home,
+  #cart,
+  #checkout,
+  #thank-you {
+    .navbar-brand {
+      a {
+        display: flex;
+        align-items: center;
+
+        #logo {
+          width: 5.381875rem;
+          height: 6.25rem;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+
+  #home {
+
+    section {
+      &.hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+          url('../assets/header-image.png') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      &.section {
+        .columns {
+          .box {
+            height: 100%;
+          }
+
+          .button {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .filter {
+      select {
+        border: solid black 1px;
+      }
+    }
+  }
+
+  #checkout {
+    .table {
+      tr:nth-last-child(2) {
+        td {
+          border: 1px solid #dbdbdb;
+          border-width: 0 0 1px;
+        }
+      }
+
+      td,
+      th {
+        border: none;
+      }
+    }
+  }
+}
+
+// Override bulma controls default style
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: black;
+}
+
+.card {
+  &.is-shadowless {
+    border: solid #CCCCCC 1px;
+  }
+}
+
+
+.radio-buttons-as-buttons {
+  label {
+    @extend button;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  input {
+    display: none;
+  }
+}
