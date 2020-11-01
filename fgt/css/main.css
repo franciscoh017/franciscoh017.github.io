@@ -2462,6 +2462,9 @@ a.box:active {
   .image.is-128x128 {
     height: 128px;
     width: 128px; }
+  .image.is-200x200 {
+    height: 200px;
+    width: 200px; }
 
 .notification {
   background-color: whitesmoke;
@@ -7670,6 +7673,10 @@ html {
   body #home .filter select,
   html #home .filter select {
     border: solid black 1px; }
+  body #home .card .card-image figure,
+  html #home .card .card-image figure {
+    margin-left: auto;
+    margin-right: auto; }
   body #checkout .table tr:nth-last-child(2) td,
   html #checkout .table tr:nth-last-child(2) td {
     border: 1px solid #dbdbdb;
@@ -7692,3 +7699,7 @@ html {
 
 .radio-buttons-as-buttons input {
   display: none; }
+
+.required:after {
+  content: " *";
+  color: red; }

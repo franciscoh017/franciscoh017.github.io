@@ -9,6 +9,7 @@
 
 // 2. Set your own initial variables
 $card-radius: 0.25rem;
+$dimensions: 16 24 32 48 64 96 128 200 !default;
 
 // Add pink and its invert
 $blueg: #0097c5;
@@ -176,6 +177,8 @@ html {
           .button {
             height: 100%;
           }
+
+          
         }
       }
     }
@@ -183,6 +186,15 @@ html {
     .filter {
       select {
         border: solid black 1px;
+      }
+    }
+
+    .card {
+      .card-image {
+        figure {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
   }
@@ -227,4 +239,9 @@ html {
   input {
     display: none;
   }
+}
+
+.required:after {
+  content:" *";
+  color: red;
 }
