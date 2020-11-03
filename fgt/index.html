@@ -21,10 +21,10 @@
 							</a>
 							<a
 								href="cart.html"
-								class="navbar-burger burger has-text-white mt-5 is-flex is-align-items-center is-hidden-desktop"
+								class="mt-5 navbar-burger burger has-text-white is-flex is-align-items-center is-hidden-desktop"
 								data-target="navbarMenuHeroA"
 							>
-								<p class="icon is-medium mr-1">
+								<p class="mr-1 icon is-medium">
 									<i class="fas fa-shopping-cart fa-lg"></i>
 								</p>
 								<p class="is-size-7">1</p>
@@ -56,13 +56,13 @@
 						child, adult, or senior in the Bay Area who really needs them right
 						now.
 					</p>
-					<a href="#" class="has-text-primary has-text-weight-semibold">
+					<a href="#" onclick="toggleImageModal()" class="has-text-primary has-text-weight-semibold">
 						How the Virtual Giving Tree works?
 					</a>
 				</section>
 			</section>
 			<section class="pt-0 section">
-				<section class="section py-5 box has-background-light is-shadowless">
+				<section class="py-5 section box has-background-light is-shadowless">
 					<div class="columns is-multiline">
 						<div
 							class="column is-full-mobile is-half-tablet is-one-third-desktop"
@@ -527,7 +527,7 @@
 							>
 								<input type="radio" value="20" name="donation" />
 								<span class="is-size-3 has-text-weight-medium">$20</span><br>
-								<span class="is-size-7">$20 Supports a gift for a child</span>
+								<span class="is-size-7">Supports a gift for a child</span>
 							</label>
 						</div>
 					</div>
@@ -548,6 +548,16 @@
 			</form>
 		</div>
 
+		<div id="image-modal" class="modal">
+			<div class="modal-background" onclick="toggleImageModal()"></div>
+			<div class="modal-content">
+				<p class="image is-5by4">
+					<img src="./assets/0002.png" alt="">
+				</p>
+			</div>
+			<button class="modal-close is-large" aria-label="close" onclick="toggleImageModal()"></button>
+		</div>
+
 		<script
 			defer
 			src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
@@ -557,6 +567,11 @@
 			function toggleModal() {
 				const modal = document.getElementById('donate-modal');
 				modal.classList.toggle('is-active');
+			}
+
+			function toggleImageModal() {
+				const modal = document.getElementById('image-modal');
+				modal.classList.toggle('is-active')
 			}
 
 			function addDonationToCart(e) {

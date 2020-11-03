@@ -46,34 +46,36 @@
 		</section>
 		<section class="pt-0 section">
 			<div class="columns">
-				<div class="column">
+				<form class="column">
 					<p class="mb-0 title is-5">Contact Information</p>
 					<hr class="mt-0" />
 					<div class="field is-grouped">
 						<div class="field control is-expanded">
-							<label class="label">First Name</label>
+							<label class="label required">First Name</label>
 							<div class="control">
 								<input
 									class="input"
 									type="text"
+									required
 									placeholder="Enter First Name"
 								/>
 							</div>
 						</div>
 
 						<div class="field control is-expanded">
-							<label class="label">Last Name</label>
+							<label class="label required">Last Name</label>
 							<div class="control">
 								<input
 									class="input"
 									type="text"
+									required
 									placeholder="Enter Last Name"
 								/>
 							</div>
 						</div>
 					</div>
 					<div class="field control is-expanded">
-						<label class="label"
+						<label class="label required"
 							>Email Address
 							<span class="has-text-weight-normal has-text-grey">
 								(Please specify work vs personal email address if
@@ -84,15 +86,31 @@
 							<input
 								class="input"
 								type="email"
+								required
 								placeholder="Enter Email Address"
 							/>
 						</div>
 						<p class="help has-text-grey-light">jsmith@example.com</p>
 					</div>
+					<div class="field">
+						<div class="control">
+							<label class="radio">
+								<input type="radio" name="mailType" checked/>
+								Personal
+							</label>
+							<label class="radio">
+								<input type="radio" name="mailType" />
+								Work
+							</label>
+						</div>
+					</div>
+
 					<div class="field control is-expanded">
 						<label class="label"
 							>Company Name
-							<span class="has-text-weight-normal has-text-grey"> (Optional)</span></label
+							<span class="has-text-weight-normal has-text-grey">
+								(Optional)</span
+							></label
 						>
 						<div class="control">
 							<input
@@ -128,7 +146,7 @@
 							<span class="px-5 is-size-7"> Place Your Order </span>
 						</a>
 					</div>
-				</div>
+				</form>
 				<div class="column is-one-third">
 					<div class="mb-5 card is-shadowless">
 						<div class="card-content">

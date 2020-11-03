@@ -43,26 +43,31 @@
 				tax, shipping, and processing to distribute to the recipient.
 			</p>
 		</section>
-		<section class="pt-0 section">
+		<form class="pt-0 section">
       <p class="mb-0 title is-5">Please share your experience with us</p>
       <hr class="mt-0" />
-      <div class="buttons">
-        <a class="button is-white is-large">
-          <span class="icon is-large has-text-primary">
-            <i class="fa fa-smile fa-2x"></i>
+			<div class="control field m-t-md radio-buttons-as-buttons">
+				<label class="button is-white is-large">
+					<input type="radio" value="happy" name="experience" />
+					<span class="is-large has-text-primary">
+            <i class="far fa-smile fa-2x"></i>
           </span>
-        </a>
-        <a class="button is-white is-large">
-          <span class="icon is-large has-text-primary">
-            <i class="fa fa-meh fa-2x"></i>
+				</label>
+				
+				<label class="button is-white is-large">
+					<input type="radio" value="neutral" name="experience"/>
+					<span class="is-large has-text-primary ">
+            <i class="far fa-meh fa-2x"></i>
           </span>
-        </a>
-        <a class="button is-large is-white">
-          <span class="icon is-large has-text-primary">
-            <i class="fa fa-frown fa-2x"></i>
+				</label>
+			
+				<label class="button is-white is-large">
+					<input type="radio" value="sad" name="experience"/>
+					<span class="is-large has-text-primary">
+            <i class="far fa-frown fa-2x"></i>
           </span>
-        </a>
-      </div>
+				</label>
+			</div>
       <div class="field control is-expanded">
         <label class="label"
           >Comments
@@ -73,11 +78,11 @@
         </div>
       </div>
       <div class="px-0 buttons">
-        <button class="button is-dark is-outlined">
+        <button type="submit" class="button is-dark is-outlined">
           <span class="px-5 is-size-7"> Submit </span>
         </button>
       </div>
-		</section>
+		</form>
 		<footer class="pb-6 footer has-background-sub-footer">
 			<div class="columns">
 				<div class="column content has-text-white">
@@ -179,5 +184,19 @@
 			defer
 			src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
 		></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+			var inputs = document.querySelectorAll('.radio-buttons-as-buttons input')
+			Array.from(inputs).forEach(function(element){
+				element.addEventListener('click', function(event){
+					// remove is-info to the current active button of this group (if there's one)
+					event.target.parentElement.querySelectorAll('span').forEach((e) => e.children[0].getAttribute('data-prefix'));
+					event.target.parentElement.parentElement.querySelectorAll('span').forEach(function(el){el.children[0].setAttribute('data-prefix', 'far')})
+					// add is-info to the new active
+					event.target.parentElement.querySelectorAll('span').forEach(function(el){el.children[0].setAttribute('data-prefix', 'fa')});
+				});
+			})
+		});
+		</script>
 	</body>
 </html>
